@@ -1,0 +1,205 @@
+.profile {
+	display: flex;
+	flex-direction: column;
+	place-items: center;
+	color: white;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+		sans-serif;
+}
+
+.profile-card {
+	display: grid;
+	grid-template-columns: repeat(8, 0.75fr);
+	grid-template-rows: repeat(5, 0.75fr);
+	grid-template-areas:
+		"profile-picture profile-picture profile-picture profile-info profile-info profile-info profile-info profile-info"
+		"profile-picture profile-picture profile-picture profile-info profile-info profile-info profile-info profile-info"
+		"profile-picture profile-picture profile-picture profile-info profile-info profile-info profile-info profile-info"
+		"separator separator separator separator separator separator separator separator"
+		"ig ig ig ig git git git git";
+	margin-bottom: 1.6em;
+	padding: 1.5em;
+	place-items: center;
+	border-radius: 2em;
+	width: 70%;
+	background: #4141e9;
+	transition: all 0.5s;
+}
+
+.profile-card:nth-child(5) {
+	margin-bottom: 4em;
+}
+
+.profile-card:hover {
+	transform: scale(1.04);
+	background: #6565fa;
+	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.044),
+		0 6.7px 5.3px rgba(0, 0, 0, 0.058), 0 12.5px 10px rgba(0, 0, 0, 0.16),
+		0 22.3px 17.9px rgba(0, 0, 0, 0.082),
+		0 41.8px 33.4px rgba(0, 0, 0, 0.096), 0 100px 80px rgba(0, 0, 0, 0.22);
+}
+
+#profile-picture {
+	grid-area: profile-picture;
+}
+
+#profile-avatar1 {
+	background: url("assets/capt-marvel.jfif");
+	background-size: cover;
+	border-radius: 50%;
+	border: 3px solid white;
+	height: 100px;
+	width: 100px;
+	transition: all 0.5s;
+}
+
+#profile-avatar2 {
+	background: url("assets/capt-america.jpg");
+	background-size: cover;
+	border-radius: 50%;
+	border: 3px solid white;
+	height: 100px;
+	width: 100px;
+	transition: all 0.5s;
+}
+
+#profile-avatar3 {
+	background: url("assets/drstrange.jpg");
+	background-size: cover;
+	border-radius: 50%;
+	border: 3px solid white;
+	height: 100px;
+	width: 100px;
+	transition: all 0.5s;
+}
+
+#profile-avatar4 {
+	background: url("assets/ironman.jpg");
+	background-size: cover;
+	border-radius: 50%;
+	border: 3px solid white;
+	height: 100px;
+	width: 100px;
+	transition: all 0.5s;
+}
+
+#profile-avatar1:hover {
+	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.044),
+		0 6.7px 5.3px rgba(0, 0, 0, 0.058), 0 12.5px 10px rgba(0, 0, 0, 0.16),
+		0 22.3px 17.9px rgba(0, 0, 0, 0.082),
+		0 41.8px 33.4px rgba(0, 0, 0, 0.096), 0 100px 80px rgba(0, 0, 0, 0.22);
+}
+
+#profile-avatar2:hover {
+	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.044),
+		0 6.7px 5.3px rgba(0, 0, 0, 0.058), 0 12.5px 10px rgba(0, 0, 0, 0.16),
+		0 22.3px 17.9px rgba(0, 0, 0, 0.082),
+		0 41.8px 33.4px rgba(0, 0, 0, 0.096), 0 100px 80px rgba(0, 0, 0, 0.22);
+}
+
+#profile-avatar3:hover {
+	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.044),
+		0 6.7px 5.3px rgba(0, 0, 0, 0.058), 0 12.5px 10px rgba(0, 0, 0, 0.16),
+		0 22.3px 17.9px rgba(0, 0, 0, 0.082),
+		0 41.8px 33.4px rgba(0, 0, 0, 0.096), 0 100px 80px rgba(0, 0, 0, 0.22);
+}
+
+#profile-avatar4:hover {
+	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.044),
+		0 6.7px 5.3px rgba(0, 0, 0, 0.058), 0 12.5px 10px rgba(0, 0, 0, 0.16),
+		0 22.3px 17.9px rgba(0, 0, 0, 0.082),
+		0 41.8px 33.4px rgba(0, 0, 0, 0.096), 0 100px 80px rgba(0, 0, 0, 0.22);
+}
+
+#profile-info {
+	grid-area: profile-info;
+	font-size: 1.25rem;
+}
+
+#nama {
+	margin-bottom: 0.5em;
+	font-size: 1.75rem;
+	font-style: italic;
+}
+
+#nim {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	font-size: 1.25rem;
+}
+
+#univ {
+	margin-top: 0.5em;
+	font-size: 1.25rem;
+	color: rgb(23, 23, 43);
+}
+
+#separator {
+	margin: 0.5em;
+	border-top: dashed 2px white;
+	width: 100%;
+	grid-area: separator;
+}
+
+#ig {
+	grid-area: ig;
+	padding: 1em;
+	border-radius: 2em;
+	width: auto;
+	background: linear-gradient(
+		45deg,
+		#f09433 0%,
+		#e6683c 25%,
+		#dc2743 50%,
+		#cc2366 75%,
+		#bc1888 100%
+	);
+	transition: all 0.5s;
+}
+
+#ig-title {
+	display: inline;
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+}
+
+#ig:hover {
+	transform: scale(1.1);
+	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.044),
+		0 6.7px 5.3px rgba(0, 0, 0, 0.058), 0 12.5px 10px rgba(0, 0, 0, 0.16),
+		0 22.3px 17.9px rgba(0, 0, 0, 0.082),
+		0 41.8px 33.4px rgba(0, 0, 0, 0.096), 0 100px 80px rgba(0, 0, 0, 0.22);
+}
+
+#git {
+	grid-area: git;
+	padding: 1em;
+	border-radius: 2em;
+	width: auto;
+	background: black;
+	transition: all 0.5s;
+}
+
+#git-title {
+	display: inline;
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+}
+
+#git:hover {
+	transform: scale(1.1);
+	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.044),
+		0 6.7px 5.3px rgba(0, 0, 0, 0.058), 0 12.5px 10px rgba(0, 0, 0, 0.16),
+		0 22.3px 17.9px rgba(0, 0, 0, 0.082),
+		0 41.8px 33.4px rgba(0, 0, 0, 0.096), 0 100px 80px rgba(0, 0, 0, 0.22);
+}
+
+#profile-info {
+	text-align: center;
+}
+
+@media screen and (min-width: 620px) {
+	.profile-card {
+		width: 450px;
+	}
+}
